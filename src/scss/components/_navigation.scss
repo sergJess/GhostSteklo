@@ -1,0 +1,15 @@
+.nav-list{
+    @extend %display-flex;
+}
+.nav__list{
+    @include font(2.3rem,2.3rem,400);
+}
+.nav-image{
+    @extend %cursor-pointer;
+}
+.nav__link{
+    transition: color .6s ease-in-out;
+}
+.nav__link:hover{
+    color:$buttonsHoverColor2;
+}

@@ -1,0 +1,12 @@
+.logotype{
+    @extend %display-flex;
+    @extend %secondFont;
+}
+.logotype-image{
+    margin-right: 1.5rem;
+}
+
+.logo__link{
+    @include font(3.2rem,6rem,400);
+    text-transform: uppercase;
+}
