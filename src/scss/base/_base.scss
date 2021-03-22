@@ -84,3 +84,7 @@ li {
     @extend %title-Font;
     @extend %position-absolute;
 }
+
+.align-self-center {
+    align-self: center;
+}
