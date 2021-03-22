@@ -2,11 +2,11 @@
   padding: 0 3.2rem 0 15rem;
 }
 
-.our-glass, .company, .menu-list, .navigation, .header-info, .header-title {
+.advantages-inner, .our-glass, .company, .menu-list, .navigation, .header-info, .header-title {
   display: flex;
 }
 
-.price-list, .glass-text__inner {
+.advantages-text-inner, .price-list, .glass-text__inner {
   display: grid;
 }
 
@@ -18,7 +18,7 @@
   display: block;
 }
 
-.price__text, .price__list, .header__info-list {
+.advantages__subtitle, .price__text, .price__list, .header__info-list {
   font-family: "Gilroy", sans-serif;
 }
 
@@ -26,19 +26,19 @@
   font-family: "FuturaPT", sans-serif;
 }
 
-.price__number, .price__title, .cost__inner, .glass__text, .glass__image, .glass-image, .company__image, .company-image__small, .company-text__first, .navigation, .header-info, .header-title, .header {
+.advantages-image, .advantages__image, .price__number, .price__title, .cost__inner, .glass__text, .glass__image, .glass-image, .company__image, .company-image__small, .company-text__first, .navigation, .header-info, .header-title, .header {
   position: relative;
 }
 
-.price__number::after, .cost-side-text, .company-text__first::before, .text__number, .price__title::before, .glass-image::before, .company-image__small::before {
+.price__number::after, .cost-side-text, .company-text__first::before, .text__number, .price__title::before, .advantages-image::before, .glass-image::before, .company-image__small::before {
   position: absolute;
 }
 
-.price__number, .price__text, .price__title {
+.advantages__subtitle, .price__number, .price__text, .price__title {
   text-transform: uppercase;
 }
 
-.glass-image::before, .company-image__small::before {
+.advantages-image::before, .glass-image::before, .company-image__small::before {
   content: "";
   width: 6rem;
   height: 6rem;
@@ -160,6 +160,7 @@ li {
 }
 
 .text__number {
+  padding: 0.5rem 0 0 0;
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: 700;
@@ -429,6 +430,47 @@ li {
 
 .cost__wrapper {
   padding: 0 0 0 15rem;
+}
+
+.advantages {
+  background-color: #ffffff;
+}
+
+.advantages-inner {
+  padding: 8.4rem 0 9.2rem 0;
+}
+
+.advantages__title {
+  max-width: 41rem;
+}
+
+.advantages__subtitle {
+  max-width: 85rem;
+  padding: 4.4rem 0 2.4rem 0;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.8px;
+}
+
+.advantages-text-inner {
+  grid-template-columns: 45rem 42rem;
+  gap: 5.4rem 4.8rem;
+}
+
+.advantages__image {
+  z-index: 20;
+}
+
+.advantages-image {
+  padding: 0 0 0 2.6rem;
+}
+
+.advantages-image::before {
+  bottom: 7%;
+  left: -1%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map*/
