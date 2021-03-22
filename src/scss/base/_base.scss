@@ -14,6 +14,7 @@ body {
     padding: 0;
     color: $darkBackgroundColor;
     @include font(1.8rem, 2.1rem, 300);
+    scroll-behavior: smooth;
 }
 
 button {
@@ -62,6 +63,20 @@ li {
     @extend %content-padding;
     border-right: 2px solid $mainBorderColor;
     border-left: 2px solid $mainBorderColor;
+}
+
+.wrapper-side-block {
+    @extend %position-realtive;
+}
+
+.side-block {
+    width: 7rem;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -14rem;
+    background: linear-gradient( #72afd3, #37ecba);
+    z-index: 50;
 }
 
 .main-title {
