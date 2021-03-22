@@ -167,10 +167,6 @@ li {
   font-style: normal;
 }
 
-.align-self-center {
-  align-self: center;
-}
-
 .header {
   background-color: #1b1b1b;
 }
@@ -485,6 +481,33 @@ li {
 
 .align-self-center {
   align-self: center;
+}
+
+.contact__link {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-margin {
+  margin: 0 5.7rem;
+}
+
+.copyright {
+  padding: 7.4rem 0 5.8rem 0;
+}
+
+.copyright-text {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  color: #a1a1a1;
 }
 
 /*# sourceMappingURL=style.css.map*/
