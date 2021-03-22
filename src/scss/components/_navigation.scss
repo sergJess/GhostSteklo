@@ -1,15 +1,35 @@
-.nav-list{
+.navigation {
+    @extend %display-flex;
+    justify-content: space-between;
+    @extend %position-realtive;
+    z-index: 20;
+}
+
+.header-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+}
+
+.menu-list {
     @extend %display-flex;
 }
-.nav__list{
-    @include font(2.3rem,2.3rem,400);
+
+.navigation__margin {
+    margin: 0 2.4rem 0 2.9rem;
 }
-.nav-image{
-    @extend %cursor-pointer;
+
+.menu__link {
+    color: $lightBackgroundColor;
+    border-bottom: 2px solid $transparentColor;
+    padding-bottom: 5px;
+    @include font(1.6rem, 1.6rem, 300);
+    letter-spacing: 0.8px;
+    transition: all 0.6s ease;
 }
-.nav__link{
-    transition: color .6s ease-in-out;
-}
-.nav__link:hover{
-    color:$buttonsHoverColor2;
+
+.menu__link:hover {
+    color: $textLightColor;
+    border-bottom: 2px solid $textLightColor;
 }

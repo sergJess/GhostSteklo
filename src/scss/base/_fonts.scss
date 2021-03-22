@@ -1,12 +1,23 @@
-@font-face{
-    font-family: 'Open Sans';
-    src: local("Open Sans"),
-    url(../../assets/fonts/openSans/OpenSans-Regular.ttf)  format('truetype');
-    font-weight: 400;
+@font-face {
+    font-family: 'Futura';
+    src: local("FuturaLightC"), url(../../assets/fonts/futura/FuturaLightC.woff) format('woff'), url(../../assets/fonts/futura/FuturaLightC.ttf) format('truetype');
+    font-weight: 300;
 }
-@font-face{
-    font-family: 'Roboto';
-    src: local("Roboto"),
-    url(../../assets/fonts/roboto/Roboto-Regular.ttf)  format('truetype');
-    font-weight: 400;
+
+@font-face {
+    font-family: 'Futura';
+    src: local("FuturaMediumC"), url(../../assets/fonts/futura/FuturaMediumC.woff) format('woff'), url(../../assets/fonts/futura/FuturaMediumC.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: local("FuturaPT Bold"), url(../../assets/fonts/futuraPt/FuturaPT-Bold.woff) format('woff'), url(../../assets/fonts/futuraPt/FuturaPT-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local("Gilroy Light"), url(../../assets/fonts/gilroy/Gilroy-Light.woff) format('woff'), url(../../assets/fonts/gilroy/Gilroy-Light.ttf) format('truetype');
+    font-weight: 300;
 }

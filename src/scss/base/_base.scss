@@ -6,21 +6,23 @@
 
 :root {
     font-size: 10px;
-    color: $primeTextColor;
 }
 
 body {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: 'Futura', sans-serif;
     margin: 0;
     padding: 0;
+    color: $darkBackgroundColor;
+    @include font(1.8rem, 2.1rem, 300);
 }
-button{
-    background-color: $transparentColor;
+
+button {
     outline: none;
     border: none;
     padding: 0;
 }
-a {color: $primeTextColor;
+
+a {
     text-decoration: none;
 }
 
@@ -35,51 +37,43 @@ ul {
 li {
     text-decoration: none;
 }
-input{
+
+input {
     border: none;
     outline: none;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    max-width: 144em;
+    max-width: 146.2rem;
     margin: 0 auto;
     @extend %content-padding;
+    border-right: 2px solid $mainBorderColor;
+    border-left: 2px solid $mainBorderColor;
 }
-.main-title{
-    @include font(4.8rem,4.8rem,400);
-    letter-spacing: 2px;
-    color: $primeButtonsColor;
+
+.main-title {
+    max-width: 60rem;
+    @include font(6rem, 6rem, 300);
+    color: $lightBackgroundColor;
+    text-transform: uppercase;
+    letter-spacing: -1.7px;
 }
-.section-title{
-    @include font(4.8rem,4.8rem,400);
-    color:$sectionTitleColor;
-}
-.block-title{
-    @include font(2.4rem,2.4rem,400);
-    color:$subtitleColor;
-}
-.title-center{
-    text-align: center;
-}
-.block-bg{
-    background:$headerBackgroundColor;
-}
-@media(max-width:1380px){
-    :root{
-        font-size: 8px;
-    }
-    .wrapper{
-        max-width: 100%;
-        padding:0 2rem;
-    }
+
+.block-title {
+    @include font(2.4rem, 2.4rem, 700);
+    @extend %title-Font;
+    text-transform: uppercase;
 }

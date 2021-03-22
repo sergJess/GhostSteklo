@@ -1,0 +1,30 @@
+.our-glass {
+    @extend %display-flex;
+    justify-content: space-between;
+}
+
+.glass-image {
+    @extend %position-realtive;
+}
+
+.glass__image {
+    @extend %position-realtive;
+    z-index: 20;
+}
+
+.glass-image::before {
+    @extend %block-squard;
+    bottom: -5%;
+    right: -5%;
+    z-index: 1;
+}
+
+.glass-text {
+    padding: 0 0 0 1rem;
+}
+
+.glass-text__inner {
+    @extend %display-grid;
+    grid-template-columns: 27.2rem 25rem;
+    gap: 5rem 6.4rem;
+}

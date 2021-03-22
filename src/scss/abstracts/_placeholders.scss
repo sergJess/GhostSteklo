@@ -1,12 +1,39 @@
-%content-padding{
-    padding: 0 12em;
-} 
-%display-flex{
+%content-padding {
+    padding: 0 3.2rem 0 15rem;
+}
+
+%display-flex {
     display: flex;
 }
-%secondFont{
-    font-family: 'Roboto', sans-serif;
+
+%display-grid {
+    display: grid;
 }
-%cursor-pointer{
+
+%second-Font {
+    font-family: 'Gilroy', sans-serif;
+}
+
+%title-Font {
+    font-family: 'FuturaPT', sans-serif;
+}
+
+%cursor-pointer {
     cursor: pointer;
+}
+
+%position-realtive {
+    position: relative;
+}
+
+%position-absolute {
+    position: absolute;
+}
+
+%block-squard {
+    @extend %position-absolute;
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid $textLightColor;
 }

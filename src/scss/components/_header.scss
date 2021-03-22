@@ -1,25 +1,47 @@
-
-.header__image{
-    background-image: url(../../assets/images/header/headerBG.png);
-
+.header {
+    background-color: $darkBackgroundColor;
+    @extend %position-realtive;
 }
-.header-links{
-    position: relative;
+
+.header-nav {
+    margin: 0 3.4rem 0 0;
+    align-self: center;
+}
+
+.header-padding {
+    padding: 3.3rem 0 0 0;
+}
+
+.header-title {
+    @extend %position-realtive;
+    z-index: 20;
     @extend %display-flex;
-    justify-content: space-between;
-    padding: 1.6em 0 12rem 0;
+    justify-content: flex-end;
+    padding: 35.4rem 3rem 13.2rem 0;
 }
-.header-main-title{
-    position: absolute;
-   top: 0;
-   display: none;
+
+.header-info {
+    @extend %position-realtive;
+    @extend %display-flex;
+    justify-content: flex-end;
+    padding: 0 19.6rem 10rem 0;
+    z-index: 20;
 }
-.header__nav-margin{
-    margin: 0 6.2rem;
+
+.header__info-list {
+    max-width: 55rem;
+    padding: 3rem 2.2rem 10.8rem 24rem;
+    @extend %second-Font;
+    border: 1px solid $lightBackgroundColor;
 }
-.header__nav-padding{
-    padding: 0.6rem 0 0 0;
+
+.info__list {
+    text-transform: uppercase;
+    color: $lightBackgroundColor;
+    @include font(1.4rem, 1.4rem, 300);
+    letter-spacing: 0.8px;
 }
-.header__nav-padding2{
-    padding: 1.2rem 0 0 0;
+
+.info-margin {
+    margin: 1.2rem 0;
 }
