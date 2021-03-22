@@ -10,6 +10,14 @@
     display: grid;
 }
 
+%display-inline-block {
+    display: inline-block;
+}
+
+%display-block {
+    display: block;
+}
+
 %second-Font {
     font-family: 'Gilroy', sans-serif;
 }
@@ -30,10 +38,22 @@
     position: absolute;
 }
 
+%text-Uppercase {
+    text-transform: uppercase;
+}
+
 %block-squard {
     @extend %position-absolute;
     content: '';
     width: 6rem;
     height: 6rem;
     border: 2px solid $textLightColor;
+}
+
+%lightLine {
+    @extend %position-absolute;
+    content: '';
+    width: 4.5rem;
+    height: 2px;
+    background-color: $lightBackgroundColor;
 }

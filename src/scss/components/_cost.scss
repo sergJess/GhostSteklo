@@ -1,0 +1,95 @@
+.cost {
+    background-color: $darkBackgroundColor;
+}
+
+.cost__inner {
+    @extend %position-realtive;
+    padding: 8rem 0 4rem 20.8rem;
+}
+
+.cost-side-text {
+    @extend %position-absolute;
+    transform: rotate(-90deg);
+    top: 44%;
+    left: -12.5%;
+    @include font(8.4rem, 8.4rem, 300);
+    letter-spacing: 0.6px;
+    color: $lightBackgroundColor;
+}
+
+.price-list {
+    @extend %display-grid;
+    grid-template-columns: 35rem 35rem;
+    gap: 11.8rem 7rem;
+    padding: 0 1rem 0 0;
+    color: $lightBackgroundColor;
+}
+
+.price__title {
+    @extend %position-realtive;
+    @extend %text-Uppercase;
+}
+
+.price__title::before {
+    @extend %lightLine;
+    top: 50%;
+    left: -6.6rem;
+}
+
+.price__list {
+    padding: 0 0 4.0 4rem;
+    @extend %second-Font;
+}
+
+.price__text {
+    padding: 1rem 0 1.6rem 0;
+    @extend %text-Uppercase;
+    @include font(1.4rem, 1.8rem, 300);
+    @extend %second-Font;
+    letter-spacing: 0.6px;
+}
+
+.price__text_wrap {
+    @extend %display-block;
+}
+
+.price__text-number {
+    @include font(3.4rem, 3.4rem, 300);
+    letter-spacing: 2px;
+}
+
+.price__text-number {
+    color: $textLightColor;
+}
+
+.price__number {
+    @extend %position-realtive;
+    @extend %display-inline-block;
+    @extend %text-Uppercase;
+    padding: 0 0.4rem 0 0;
+}
+
+.price__number::after {
+    @extend %position-absolute;
+    content: '2';
+    color: $textLightColor;
+    @include font(1.8rem, 1.8rem, 300);
+    top: 2px;
+    right: -5px;
+}
+
+.cost-undercut {
+    border-top: 2px solid $mainBorderColor;
+    padding: 0 0 8rem 0;
+}
+
+.cost-undercut__text {
+    padding: 4.2rem 8.8rem 0 0;
+    @include font(1.4rem, 1.8rem, 300);
+    letter-spacing: 0.6px;
+    color: $textDarkColor3;
+}
+
+.cost__wrapper {
+    padding: 0 0 0 15rem;
+}
