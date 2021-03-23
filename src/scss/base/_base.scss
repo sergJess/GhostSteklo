@@ -75,8 +75,8 @@ li {
     position: absolute;
     height: 100%;
     top: 0;
-    right: -14rem;
-    background: linear-gradient( #72afd3, #37ecba);
+    right: 0;
+    background: linear-gradient( $sideBlockGradient1, $sideBlockGradient2);
     z-index: 50;
 }
 

@@ -150,7 +150,7 @@ li {
   position: absolute;
   height: 100%;
   top: 0;
-  right: -14rem;
+  right: 0;
   background: linear-gradient(#72afd3, #37ecba);
   z-index: 50;
 }
@@ -317,7 +317,7 @@ li {
 }
 
 .our-glass {
-  padding: 15.6rem 0 8.2rem 0;
+  padding: 15.2rem 0 8.6rem 0;
 }
 
 .glass__title {
@@ -361,7 +361,7 @@ li {
 }
 
 .cost__inner {
-  padding: 8rem 0 4rem 20.8rem;
+  padding: 8rem 0 4.4rem 20.8rem;
 }
 
 .cost-side-text {
@@ -388,12 +388,8 @@ li {
   left: -6.6rem;
 }
 
-.price__list {
-  padding: 0 0 4 4rem;
-}
-
 .price__text {
-  padding: 1rem 0 1.6rem 0;
+  padding: 0.6rem 0 1.6rem 0;
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 300;
@@ -430,7 +426,7 @@ li {
 
 .cost-undercut {
   border-top: 2px solid #323232;
-  padding: 0 0 8rem 0;
+  padding: 0 0 7.8rem 0;
 }
 
 .cost-undercut__text {
@@ -440,7 +436,7 @@ li {
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.6px;
-  color: #8d8d8d;
+  color: #ffffff;
 }
 
 .cost__wrapper {
@@ -452,7 +448,7 @@ li {
 }
 
 .advantages-inner {
-  padding: 8.4rem 0 7.3rem 0;
+  padding: 8.4rem 0 7.1rem 0;
 }
 
 .advantages__title {
@@ -480,7 +476,7 @@ li {
 }
 
 .advantages-image::before {
-  bottom: -18px;
+  bottom: -15px;
   left: -30px;
   z-index: 1;
 }

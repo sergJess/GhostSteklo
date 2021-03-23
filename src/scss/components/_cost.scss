@@ -4,7 +4,7 @@
 
 .cost__inner {
     @extend %position-realtive;
-    padding: 8rem 0 4rem 20.8rem;
+    padding: 8rem 0 4.4rem 20.8rem;
 }
 
 .cost-side-text {
@@ -37,12 +37,11 @@
 }
 
 .price__list {
-    padding: 0 0 4.0 4rem;
     @extend %second-Font;
 }
 
 .price__text {
-    padding: 1rem 0 1.6rem 0;
+    padding: 0.6rem 0 1.6rem 0;
     @extend %text-Uppercase;
     @include font(1.4rem, 1.8rem, 300);
     @extend %second-Font;
@@ -80,14 +79,14 @@
 
 .cost-undercut {
     border-top: 2px solid $mainBorderColor;
-    padding: 0 0 8rem 0;
+    padding: 0 0 7.8rem 0;
 }
 
 .cost-undercut__text {
     padding: 4.2rem 8.8rem 0 0;
     @include font(1.4rem, 1.8rem, 300);
     letter-spacing: 0.6px;
-    color: $textDarkColor3;
+    color: $lightBackgroundColor;
 }
 
 .cost__wrapper {
