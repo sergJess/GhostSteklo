@@ -37,7 +37,7 @@
 
 .company-image {
     align-self: flex-end;
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 1.6rem 0;
 }
 
 .company-image__small {
@@ -47,8 +47,8 @@
 
 .company-image__small::before {
     @extend %block-squard;
-    top: -13%;
-    left: -15%;
+    top: -32px;
+    left: -32px;
     z-index: 1;
 }
 

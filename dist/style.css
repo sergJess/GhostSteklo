@@ -52,6 +52,10 @@
   background-color: #ffffff;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Futura";
   src: local("FuturaLightC"), url(85f9fcf994e69ef4313d4d8c8eaf3874.woff) format("woff"), url(fbd58d5cd9fab069748e5d0f897a6fba.ttf) format("truetype");
@@ -295,7 +299,7 @@ li {
 
 .company-image {
   align-self: flex-end;
-  margin: 0 0 1.4rem 0;
+  margin: 0 0 1.6rem 0;
 }
 
 .company-image__small {
@@ -303,8 +307,8 @@ li {
 }
 
 .company-image__small::before {
-  top: -13%;
-  left: -15%;
+  top: -32px;
+  left: -32px;
   z-index: 1;
 }
 
@@ -313,7 +317,7 @@ li {
 }
 
 .our-glass {
-  padding: 15.6rem 0 8.6rem 0;
+  padding: 15.6rem 0 8.2rem 0;
 }
 
 .glass__title {
