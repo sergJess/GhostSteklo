@@ -38,3 +38,8 @@
         @include font(2rem, 2rem, 300);
     }
 }
+@media (max-width:1100px){
+    .menu__link {
+        @include font(2.4rem, 2.6rem, 300);
+    }
+}

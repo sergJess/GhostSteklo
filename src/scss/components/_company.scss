@@ -72,10 +72,21 @@
    .company-image{
        order:1;
    }
-   .company-image__small{
-       position: static;
+   .company-image__small::before{
+     width: 0;
+     height: 0;
    }
    .company-text {
     max-width: 100%;
 }
+.company__title {
+    padding: 1.8rem 0 3rem 0;
+}
+.company-text__second {
+    padding: 0 0 0 10.4rem;
+}
+.company-text__first{
+    padding: 0 0 2rem 10.4rem;
+}
+
 }

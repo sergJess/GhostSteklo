@@ -57,7 +57,12 @@ li {
     margin: 0;
     padding: 0;
 }
-
+.mobile-visible{
+    display: block;
+}
+.mobile-invisible{
+    display: block;
+}
 .wrapper {
     max-width: 146.2rem;
     margin: 0 auto;
@@ -121,4 +126,25 @@ li {
     .wrapper{
        max-width:140rem; ;
     }
+}
+@media (max-width:1050px){
+    .wrapper{
+       max-width:120rem; ;
+    }
+    .mobile-invisible{
+        display: none;
+    }
+
+}
+@media(min-width:1050px){
+   
+    .mobile-visible{
+        display: none;
+    }
+}
+@media(max-width:900px){
+    .wrapper{
+        max-width:90rem; ;
+     }
+   
 }

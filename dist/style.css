@@ -138,6 +138,14 @@ li {
   padding: 0;
 }
 
+.mobile-visible {
+  display: block;
+}
+
+.mobile-invisible {
+  display: block;
+}
+
 .wrapper {
   max-width: 146.2rem;
   margin: 0 auto;
@@ -209,6 +217,25 @@ li {
 @media (max-width: 1100px) {
   .wrapper {
     max-width: 140rem;
+  }
+}
+@media (max-width: 1050px) {
+  .wrapper {
+    max-width: 120rem;
+  }
+
+  .mobile-invisible {
+    display: none;
+  }
+}
+@media (min-width: 1050px) {
+  .mobile-visible {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: 90rem;
   }
 }
 .header {
@@ -306,6 +333,14 @@ li {
     font-style: normal;
   }
 }
+@media (max-width: 1100px) {
+  .menu__link {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
 .company {
   padding: 8rem 0 0 0;
 }
@@ -385,12 +420,25 @@ li {
     order: 1;
   }
 
-  .company-image__small {
-    position: static;
+  .company-image__small::before {
+    width: 0;
+    height: 0;
   }
 
   .company-text {
     max-width: 100%;
+  }
+
+  .company__title {
+    padding: 1.8rem 0 3rem 0;
+  }
+
+  .company-text__second {
+    padding: 0 0 0 10.4rem;
+  }
+
+  .company-text__first {
+    padding: 0 0 2rem 10.4rem;
   }
 }
 .our-glass {
@@ -450,6 +498,26 @@ li {
 
   .glass-text {
     padding: 0 0 0 6rem;
+  }
+}
+@media (max-width: 1050px) {
+  .our-glass {
+    flex-direction: column-reverse;
+    padding: 5.2rem 0 8rem 0;
+    align-items: center;
+  }
+
+  .glass-image {
+    max-width: 600px;
+  }
+
+  .glass-text {
+    padding: 0 0 3rem 6rem;
+  }
+
+  .glass-text__inner {
+    grid-template-columns: 100.2rem;
+    gap: 4.4rem 2.8rem;
   }
 }
 .cost {
@@ -577,6 +645,25 @@ li {
   z-index: 1;
 }
 
+@media (max-width: 1100px) {
+  .advantages-inner {
+    flex-direction: column;
+  }
+
+  .advantages__subtitle {
+    max-width: 100%;
+  }
+
+  .advantages-text-inner {
+    grid-template-columns: 45% 45%;
+    padding: 0 5.8rem 2rem 0;
+    justify-content: center;
+  }
+
+  .advantages-image {
+    align-self: center;
+  }
+}
 .footer {
   background-color: #1b1b1b;
 }
@@ -621,6 +708,15 @@ li {
   .contact__link {
     font-size: 2rem;
     line-height: 2.2rem;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 1110px) {
+  .contact__link {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.5px;
