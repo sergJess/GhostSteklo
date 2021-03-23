@@ -36,3 +36,10 @@
     letter-spacing: 0.8px;
     color: $textDarkColor;
 }
+
+@media(max-width:1370px){
+    .contact__link {
+        @include font(2rem, 2.2rem, 500);
+        letter-spacing: 0.5px;
+    }
+}

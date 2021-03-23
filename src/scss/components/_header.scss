@@ -1,6 +1,7 @@
 .header {
     background-color: $darkBackgroundColor;
     @extend %position-realtive;
+    overflow: hidden;
 }
 
 .header-nav {
@@ -44,4 +45,10 @@
 
 .info-margin {
     margin: 1.2rem 0;
+}
+
+@media (max-width:1390px){
+    .info__list{
+        @include font(1.8rem, 1.8rem, 300);
+    }
 }

@@ -46,3 +46,19 @@
 .glass__sub-text {
     display: inline-block;
 }
+@media(max-width:1370px){
+    .glass__text {
+      @include font(2.1rem,2.2rem,300);
+        letter-spacing: 0.6px;
+    }
+    
+}
+@media(max-width:1260px){
+    .glass-text__inner {
+        grid-template-columns: 40.2rem;
+        gap: 4.4rem 2.8rem;
+    }
+    .glass-text {
+        padding: 0 0 0 6rem;
+    }
+}

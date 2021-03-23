@@ -56,3 +56,26 @@
     @extend %position-realtive;
     z-index: 20;
 }
+@media(max-width:1370px){
+    .company__text {
+        @include font(2.2rem, 2.3rem, 300);
+        letter-spacing: 0.6px;
+    }
+    
+}
+@media(max-width:1100px){
+    .company{
+        flex-wrap: wrap;
+    justify-content: center;
+}
+   .company-text{order:2}
+   .company-image{
+       order:1;
+   }
+   .company-image__small{
+       position: static;
+   }
+   .company-text {
+    max-width: 100%;
+}
+}
