@@ -57,13 +57,27 @@
     .header-title{
         padding: 0;   
     }
-    .header__title{ transform: rotate(-90deg); }
+    .header__title{ transform: rotate(-90deg);
+    position: relative;
+top:9rem;
+left:2rem;
+}
     .header-info {
-        padding: 0 19.6rem 2rem 0;
+        padding: 20rem 0 5rem 0;
     }
     .header__info-list {
         max-width: 100%;
-        padding: 3rem 2.2rem 0 24rem;
+        padding: 3rem 11rem 0 2rem;
         border:none;
+    }
+    .header-nav{
+        flex-direction: column;
+        position: absolute;
+        top:50px;
+        right:-600px;
+    }
+    .arrow-down{
+        border:1px solid $lightBackgroundColor;
+        padding: 0.5rem;;
     }
 }

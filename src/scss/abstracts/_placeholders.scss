@@ -49,7 +49,13 @@
     height: 6rem;
     border: 2px solid $textLightColor;
 }
-
+%block-squard-mobile{
+    @extend %position-absolute;
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid $textLightColor;
+}
 %lightLine {
     @extend %position-absolute;
     content: '';

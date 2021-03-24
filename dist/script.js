@@ -39,10 +39,13 @@ window.onload = function () {
   var companySmallImage = document.querySelector('.company__image-small');
   var companyBigImage = document.querySelector('.company__image-big');
   var glassImage = document.querySelector('.glass__image');
-  var advantagesImage = document.querySelector('.advantages__image'); //media
+  var advantagesImage = document.querySelector('.advantages__image');
+  var logoHeader = document.querySelector('.logo-header');
+  var logoFooter = document.querySelector('.logo-footer'); //media
 
   var media1060Px = window.matchMedia('(max-width: 1060px)');
   var media800Px = window.matchMedia('(max-width: 800px)');
+  var media620Px = window.matchMedia('(max-width: 620px)');
 
   function changeImages(selector, src) {
     selector.setAttribute('src', src);
@@ -57,6 +60,11 @@ window.onload = function () {
     changeImages(companyBigImage, 'src/assets/images/mobile/about-company/company-mobile-2.png');
     changeImages(glassImage, 'src/assets/images/mobile/our-glass/glass-image.png');
     changeImages(advantagesImage, 'src/assets/images/mobile/advantages/advantages.png');
+  }
+
+  if (media620Px.matches) {
+    changeImages(logoHeader, 'src/assets/images/mobile/logotype/logo-header.png');
+    changeImages(logoFooter, 'src/assets/images/mobile/logotype/logo.png');
   }
 };
 })();
