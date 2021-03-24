@@ -7,6 +7,7 @@ const glassImage = document.querySelector('.glass__image');
 const advantagesImage = document.querySelector('.advantages__image');
 const logoHeader = document.querySelector('.logo-header');
 const logoFooter = document.querySelector('.logo-footer');
+const arrowDown = document.querySelector('.arrow__down');
 //media
 const media1060Px = window.matchMedia('(max-width: 1060px)');
 const media800Px = window.matchMedia('(max-width: 800px)');
@@ -28,5 +29,6 @@ if(media800Px.matches){
 if(media620Px.matches){
     changeImages(logoHeader,'src/assets/images/mobile/logotype/logo-header.png');
     changeImages(logoFooter,'src/assets/images/mobile/logotype/logo.png');
+    changeImages(arrowDown,'src/assets/images/mobile/header/arrow-down.svg');
 }
 }

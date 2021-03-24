@@ -56,3 +56,30 @@
     }
     .advantages-image{align-self: center;}
 }
+@media(max-width:620px){
+    .advantages-inner {
+        flex-direction: column-reverse;
+        padding: 4rem 0 3rem 0;
+    }
+    .advantages-text{
+        padding: 3rem 0 0 0;
+    }
+    .advantages-image::before {
+        bottom: -20px;
+        left: -20px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $textLightColor;
+    }
+    .advantages__subtitle {
+        padding: 2rem 0 1rem 0;
+       @include font(1.4rem,1.7rem,300);
+    }
+    .advantages-text-inner {
+        grid-template-columns: 85%;
+        padding: 0 2rem 2rem 0;
+        justify-content: left;
+        gap: 1.4rem;
+    }
+}

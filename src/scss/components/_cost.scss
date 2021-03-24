@@ -127,5 +127,7 @@
         grid-template-columns: 75%;
         justify-content: right;
     }
-    .price__text-number{}
+    .price__text-number{
+        @include font(2.1rem, 2.5rem, 300);
+    }
 }

@@ -294,6 +294,11 @@ li {
     font-style: normal;
   }
 }
+@media (max-width: 440px) {
+  .wrapper {
+    padding: 0 4rem 0 1.5rem;
+  }
+}
 .header {
   background-color: #1b1b1b;
   overflow: hidden;
@@ -380,6 +385,35 @@ li {
   .arrow-down {
     border: 1px solid #ffffff;
     padding: 0.5rem;
+  }
+}
+@media (max-width: 440px) {
+  .header__burger {
+    margin: 0.7rem 1rem 0 0;
+  }
+
+  .header-bg-image {
+    top: 40px;
+  }
+
+  .header__info-list {
+    padding: 4rem 11rem 0 2rem;
+  }
+
+  .arrow-down {
+    position: relative;
+    top: 20px;
+    left: 30px;
+  }
+
+  .header__title {
+    top: 15rem;
+    left: 5.6rem;
+    letter-spacing: 1px;
+  }
+
+  .header-info {
+    padding: 20rem 0 4.6rem 0;
   }
 }
 .navigation {
@@ -574,6 +608,10 @@ li {
   .company-text__second {
     padding: 0 0 2rem 5rem;
   }
+
+  .company-image__small {
+    padding: 0 1rem 0 0;
+  }
 }
 .our-glass {
   padding: 15.2rem 0 8.6rem 0;
@@ -681,7 +719,7 @@ li {
 
   .glass-text__inner {
     grid-template-columns: 100%;
-    gap: 4.4rem 2.8rem;
+    gap: 2rem;
   }
 
   .glass-text {
@@ -824,6 +862,13 @@ li {
     grid-template-columns: 75%;
     justify-content: right;
   }
+
+  .price__text-number {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    font-style: normal;
+  }
 }
 .advantages {
   background-color: #ffffff;
@@ -880,6 +925,40 @@ li {
 
   .advantages-image {
     align-self: center;
+  }
+}
+@media (max-width: 620px) {
+  .advantages-inner {
+    flex-direction: column-reverse;
+    padding: 4rem 0 3rem 0;
+  }
+
+  .advantages-text {
+    padding: 3rem 0 0 0;
+  }
+
+  .advantages-image::before {
+    bottom: -20px;
+    left: -20px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #51d1c5;
+  }
+
+  .advantages__subtitle {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .advantages-text-inner {
+    grid-template-columns: 85%;
+    padding: 0 2rem 2rem 0;
+    justify-content: left;
+    gap: 1.4rem;
   }
 }
 .footer {
@@ -955,6 +1034,30 @@ li {
   .footer-nav {
     display: none;
   }
+
+  .contact-margin {
+    margin: 0 2rem;
+  }
+
+  .contact__link {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .copyright-text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    font-style: normal;
+  }
 }
 .burger {
   display: none;
@@ -970,7 +1073,7 @@ li {
   width: 20px;
   height: 1px;
   background-color: #ffffff;
-  margin: 0.8rem 0;
+  margin: 0.6rem 0;
 }
 
 @media (max-width: 620px) {
