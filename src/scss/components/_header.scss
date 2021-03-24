@@ -53,6 +53,17 @@
     }
 }
 
-@media(max-width:1050px){
-   
+@media(max-width:620px){
+    .header-title{
+        padding: 0;   
+    }
+    .header__title{ transform: rotate(-90deg); }
+    .header-info {
+        padding: 0 19.6rem 2rem 0;
+    }
+    .header__info-list {
+        max-width: 100%;
+        padding: 3rem 2.2rem 0 24rem;
+        border:none;
+    }
 }

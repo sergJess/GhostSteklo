@@ -33,7 +33,32 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+// mobile change images
+window.onload = function () {
+  var headerBgImage = document.querySelector('.header-bg__image');
+  var companySmallImage = document.querySelector('.company__image-small');
+  var companyBigImage = document.querySelector('.company__image-big');
+  var glassImage = document.querySelector('.glass__image');
+  var advantagesImage = document.querySelector('.advantages__image'); //media
 
+  var media1060Px = window.matchMedia('(max-width: 1060px)');
+  var media800Px = window.matchMedia('(max-width: 800px)');
+
+  function changeImages(selector, src) {
+    selector.setAttribute('src', src);
+  }
+
+  if (media1060Px.matches) {
+    changeImages(headerBgImage, 'src/assets/images/mobile/header/header-bg.png');
+  }
+
+  if (media800Px.matches) {
+    changeImages(companySmallImage, 'src/assets/images/mobile/about-company/company-mobile-1.png');
+    changeImages(companyBigImage, 'src/assets/images/mobile/about-company/company-mobile-2.png');
+    changeImages(glassImage, 'src/assets/images/mobile/our-glass/glass-image.png');
+    changeImages(advantagesImage, 'src/assets/images/mobile/advantages/advantages.png');
+  }
+};
 })();
 
 /******/ })()

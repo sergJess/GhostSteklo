@@ -71,7 +71,6 @@
     }
     .glass-image{
         max-width: 600px;
-        
     }
     .glass-text {
         padding: 0 0 3rem 6rem;
@@ -79,5 +78,11 @@
     .glass-text__inner {
         grid-template-columns: 100.2rem;
         gap: 4.4rem 2.8rem;
+}
+}
+@media(max-width:1050px){
+    .glass-text__inner {
+        grid-template-columns: 50%;
+       
 }
 }

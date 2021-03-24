@@ -144,7 +144,22 @@ li {
 }
 @media(max-width:900px){
     .wrapper{
-        max-width:90rem; ;
+        max-width:92%; ;
      }
    
+}
+@media(max-width:620px){
+    :root{
+        font-size: 10px;
+    }
+    .wrapper{
+        max-width:100%; 
+        border: none;
+        padding: 0 4rem 0 1rem;
+     }
+     .main-title {
+        max-width: 25rem;
+        @include font(2.2rem, 2.2rem, 300);
+        letter-spacing: -1.7px;
+    }
 }
