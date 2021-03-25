@@ -300,6 +300,11 @@ li {
     padding: 0 4rem 0 1.5rem;
   }
 }
+@media (max-width: 370px) {
+  .wrapper {
+    padding: 0 4rem 0 1rem;
+  }
+}
 .header {
   background-color: #1b1b1b;
   overflow: hidden;
@@ -415,6 +420,11 @@ li {
 
   .header-info {
     padding: 20rem 0 4.6rem 0;
+  }
+}
+@media (max-width: 370px) {
+  .header-padding {
+    padding: 1rem 0 0 0;
   }
 }
 .navigation {
@@ -774,6 +784,13 @@ li {
     padding: 3rem 0 2.6rem 0;
   }
 }
+@media (max-width: 370px) {
+  .glass-image::before {
+    width: 0;
+    height: 0;
+    border: none;
+  }
+}
 .cost {
   background-color: #1b1b1b;
 }
@@ -945,6 +962,21 @@ li {
   .price-list {
     gap: 2.2rem;
   }
+
+  .cost-undercut__text {
+    padding: 1.4rem 0 0 0;
+    letter-spacing: -0.2px;
+  }
+
+  .cost-undercut {
+    padding: 0 0 4.6rem 0;
+  }
+}
+@media (max-width: 392px) {
+  .price-list {
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
 }
 .advantages {
   background-color: #ffffff;
@@ -1035,6 +1067,61 @@ li {
     padding: 0 2rem 2rem 0;
     justify-content: left;
     gap: 1.4rem;
+  }
+}
+@media (max-width: 440px) {
+  .wrapper-advantages {
+    padding: 0 3rem 0 1.5rem;
+  }
+
+  .advantages-image {
+    align-self: flex-end;
+  }
+
+  .advantages__title {
+    max-width: 32rem;
+  }
+
+  .advantages-text {
+    padding: 3.2rem 0 0 0;
+  }
+
+  .advantages__subtitle {
+    font-family: "Futura", sans-serif;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .advantages-text-inner {
+    grid-template-columns: 100%;
+    padding: 0 0 2rem 0;
+  }
+
+  .advantages__text {
+    line-height: 1.9rem;
+  }
+
+  .advantages-inner {
+    flex-direction: column-reverse;
+    padding: 4rem 0 4.6rem 0;
+  }
+}
+@media (max-width: 370px) {
+  .advantages-inner {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .wrapper-advantages {
+    padding: 0 3rem 0 1rem;
+  }
+
+  .advantages-image::before {
+    width: 0;
+    height: 0;
+    border: none;
+  }
+
+  .advantages-image {
+    align-self: center;
   }
 }
 .footer {
@@ -1133,6 +1220,41 @@ li {
     line-height: 1.4rem;
     font-weight: 300;
     font-style: normal;
+  }
+}
+@media (max-width: 440px) {
+  .footer-info {
+    padding: 4rem 0 0 0;
+  }
+
+  .contact-margin {
+    margin: 0 1rem 0 1.5rem;
+  }
+
+  .footer-info {
+    align-items: baseline;
+  }
+
+  .contact__link {
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    padding: 2rem 0 2rem 0;
+  }
+}
+@media (max-width: 392px) {
+  .contacts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+
+  .contact-margin {
+    margin: 1rem;
   }
 }
 .burger {

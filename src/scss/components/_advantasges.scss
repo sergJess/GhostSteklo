@@ -83,3 +83,48 @@
         gap: 1.4rem;
     }
 }
+@media(max-width:440px){
+    .wrapper-advantages{
+        padding: 0 3rem 0 1.5rem;
+    }
+    .advantages-image {
+        align-self: flex-end;
+    }
+    .advantages__title {
+        max-width: 32rem;
+    }
+    .advantages-text {
+        padding: 3.2rem 0 0 0;
+    }
+    .advantages__subtitle {
+        font-family: 'Futura', sans-serif;
+        padding: 2rem 0 3rem 0;
+    }
+    .advantages-text-inner {
+        grid-template-columns: 100%;
+        padding: 0 0 2rem 0;
+    }
+    .advantages__text{
+        line-height: 1.9rem;
+    }
+    .advantages-inner {
+        flex-direction: column-reverse;
+        padding: 4rem 0 4.6rem 0;
+    }
+}
+@media(max-width:370px){
+    .advantages-inner {
+        padding: 4rem 0 2rem 0;
+    }
+    .wrapper-advantages {
+        padding: 0 3rem 0 1rem;
+    }
+    .advantages-image::before {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+    .advantages-image {
+        align-self: center;
+    }
+}

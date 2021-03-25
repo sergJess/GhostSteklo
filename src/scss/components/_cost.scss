@@ -152,4 +152,17 @@
     .price-list {
         gap: 2.2rem;
     }
+    .cost-undercut__text {
+        padding: 1.4rem 0 0 0;
+        letter-spacing: -0.2px;
+    }
+    .cost-undercut {
+        padding: 0 0 4.6rem 0;
+    }
+}
+@media(max-width:392px){
+    .price-list {
+        grid-template-columns: 50%;
+        justify-content: center;
+    }
 }
