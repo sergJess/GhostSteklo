@@ -1,0 +1,8 @@
+.overlay{
+width: 100vw;
+background-color: $darkBackgroundColor;
+opacity: 0;
+}
+.overlay-visible{
+    height: 100vh;
+}

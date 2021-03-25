@@ -32,3 +32,14 @@ if(media620Px.matches){
     changeImages(arrowDown,'src/assets/images/mobile/header/arrow-down.svg');
 }
 }
+
+
+//mobile
+const burgerMenu = document.querySelector('.header-nav');
+const burger = document.querySelector('.burger');
+burger.addEventListener('click',(e)=>{
+    burgerMenu.classList.add('mobile-menu-animation');
+    burgerMenu.addEventListener('animationend', ()=>{
+        burgerMenu.classList.add('mobile-menu-animation-end');
+    });
+});

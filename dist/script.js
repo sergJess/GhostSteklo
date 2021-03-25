@@ -68,7 +68,17 @@ window.onload = function () {
     changeImages(logoFooter, 'src/assets/images/mobile/logotype/logo.png');
     changeImages(arrowDown, 'src/assets/images/mobile/header/arrow-down.svg');
   }
-};
+}; //mobile
+
+
+var burgerMenu = document.querySelector('.header-nav');
+var burger = document.querySelector('.burger');
+burger.addEventListener('click', function (e) {
+  burgerMenu.classList.add('mobile-menu-animation');
+  burgerMenu.addEventListener('animationend', function () {
+    burgerMenu.classList.add('mobile-menu-animation-end');
+  });
+});
 })();
 
 /******/ })()

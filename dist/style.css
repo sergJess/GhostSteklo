@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.advantages-image, .advantages__image, .price__number, .price__title, .cost__inner, .glass__text, .glass__image, .glass-image, .company__image, .company-image__small, .company-text__first, .navigation, .header-info, .header-title, .header, .wrapper-side-block {
+.advantages-image, .advantages__image, .price__number, .price__title, .cost__inner, .glass__text, .glass__image, .glass-image, .company__image, .company-image__small, .company-text__first, .navigation, .header-info, .header-title, .header-nav, .header, .wrapper-side-block, body {
   position: relative;
 }
 
@@ -148,6 +148,10 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+.body-overflow {
+  overflow: hidden;
 }
 
 .mobile-visible {
@@ -384,8 +388,12 @@ li {
   .header-nav {
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    right: -600px;
+    width: 18.3rem;
+    height: 44rem;
+    background-color: #1b1b1b;
+    top: 20px;
+    right: -200px;
+    z-index: 500;
   }
 
   .arrow-down {
@@ -460,6 +468,28 @@ li {
   border-bottom: 2px solid #51d1c5;
 }
 
+.navigation__mobile {
+  display: none;
+}
+
+.nav__mobile-cross {
+  display: none;
+}
+
+.cross__line {
+  width: 15px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.cross__line-left {
+  transform: rotate(-45deg);
+}
+
+.cross__line-right {
+  transform: rotate(45deg);
+}
+
 @media (max-width: 1450px) {
   .menu__link {
     font-size: 2rem;
@@ -483,7 +513,44 @@ li {
     font-weight: 300;
     font-style: normal;
   }
+
+  .navigation__mobile {
+    display: block;
+  }
+
+  .nav__mobile-cross {
+    display: block;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+.mobile-menu-animation {
+  animation-name: burger-menu;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes burger-menu {
+  30% {
+    right: -400px;
+  }
+  50% {
+    right: -200px;
+  }
+  70% {
+    right: 0px;
+  }
+  100% {
+    right: 180px;
+  }
+}
+.mobile-menu-animation-end {
+  right: 0px;
+}
+
 .company {
   padding: 8rem 0 0 0;
 }
@@ -1280,6 +1347,15 @@ li {
     flex-direction: column;
     align-items: flex-end;
   }
+}
+.overlay {
+  width: 100vw;
+  background-color: #1b1b1b;
+  opacity: 0;
+}
+
+.overlay-visible {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map*/
