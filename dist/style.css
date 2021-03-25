@@ -95,6 +95,7 @@
 
 :root {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -621,6 +622,18 @@ li {
   .company {
     padding: 4rem 0 0 0;
   }
+
+  .company__title {
+    padding: 1.8rem 0 2.2rem 0;
+  }
+
+  .company__text {
+    max-width: 97%;
+  }
+
+  .company-text__second {
+    padding: 0 0 1rem 5rem;
+  }
 }
 .our-glass {
   padding: 15.2rem 0 8.6rem 0;
@@ -733,6 +746,32 @@ li {
 
   .glass-text {
     padding: 4rem 0 3rem 1rem;
+  }
+}
+@media (max-width: 440px) {
+  .glass-image {
+    align-self: baseline;
+  }
+
+  .our-glass {
+    padding: 1.2rem 0 0 0;
+  }
+
+  .glass__title {
+    padding: 0 0 2rem 0;
+  }
+
+  .glass-text__inner {
+    gap: 2rem;
+  }
+
+  .glass__text {
+    letter-spacing: -0.1px;
+    line-height: 2.2rem;
+  }
+
+  .glass-text {
+    padding: 3rem 0 2.6rem 0;
   }
 }
 .cost {
@@ -877,6 +916,34 @@ li {
     line-height: 2.5rem;
     font-weight: 300;
     font-style: normal;
+  }
+}
+@media (max-width: 440px) {
+  .cost-side-text {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 300;
+    font-style: normal;
+    top: 90px;
+    left: -68px;
+    letter-spacing: 2px;
+  }
+
+  .cost__inner {
+    padding: 3rem 0 3rem 2rem;
+  }
+
+  .price__title::before {
+    width: 3rem;
+    left: -4.6rem;
+  }
+
+  .price__text-number {
+    font-family: "Futura", sans-serif;
+  }
+
+  .price-list {
+    gap: 2.2rem;
   }
 }
 .advantages {

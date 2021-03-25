@@ -7,6 +7,7 @@
 :root {
     font-size: 10px;
     @extend %scroll-smooth;
+    overflow-x: hidden;
 }
 
 body {

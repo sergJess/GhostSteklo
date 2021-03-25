@@ -107,4 +107,26 @@
 .glass-text {
     padding: 4rem 0 3rem 1rem;
 }
+
+}
+@media(max-width:440px){
+    .glass-image{
+        align-self: baseline;
+    }
+    .our-glass {
+        padding: 1.2rem 0 0 0;
+    }
+    .glass__title {
+        padding: 0 0 2rem 0;
+    }
+    .glass-text__inner {
+        gap: 2rem;
+    }
+    .glass__text {
+      letter-spacing: -0.1px;
+      line-height: 2.2rem;
+    }
+    .glass-text {
+        padding: 3rem 0 2.6rem 0;
+    }
 }

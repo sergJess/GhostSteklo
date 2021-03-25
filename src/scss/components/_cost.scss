@@ -131,3 +131,25 @@
         @include font(2.1rem, 2.5rem, 300);
     }
 }
+
+@media(max-width:440px){
+    .cost-side-text {
+        @include font(3rem,3rem,300);
+        top: 90px;
+        left: -68px;
+        letter-spacing: 2px;
+    }
+    .cost__inner {
+        padding: 3rem 0 3rem 2rem;
+    }
+    .price__title::before {
+        width: 3rem; 
+        left: -4.6rem; 
+    }
+    .price__text-number{
+        font-family: 'Futura', sans-serif;
+    }
+    .price-list {
+        gap: 2.2rem;
+    }
+}
