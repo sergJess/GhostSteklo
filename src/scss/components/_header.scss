@@ -72,14 +72,7 @@ left:2rem;
         border:none;
     }
     .header-nav{
-        flex-direction: column;
-        position: absolute;
-        width: 18.3rem;
-        height:44rem ;
-        background-color: $darkBackgroundColor;
-        top:20px;
-        right:-200px;
-        z-index: 500;
+       display: none;
     }
     .arrow-down{
         border:1px solid $lightBackgroundColor;

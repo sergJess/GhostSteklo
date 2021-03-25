@@ -1,8 +1,24 @@
 .overlay{
+    position: absolute;
+    top:0;
 width: 100vw;
+height: 0;
 background-color: $darkBackgroundColor;
 opacity: 0;
+z-index: 5000;
 }
 .overlay-visible{
     height: 100vh;
+}
+.overlay-opacity{
+    opacity: 0.6;
+}
+.overlay-animation{
+    animation-name:opacity;
+    animation-duration: 0.4s;
+}
+@keyframes opacity{
+100%{
+    opacity: 0.6;
+}
 }

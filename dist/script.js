@@ -71,10 +71,16 @@ window.onload = function () {
 }; //mobile
 
 
-var burgerMenu = document.querySelector('.header-nav');
+var overlay = document.querySelector('.overlay');
+var burgerMenu = document.querySelector('.mobile-menu');
 var burger = document.querySelector('.burger');
 burger.addEventListener('click', function (e) {
+  document.body.classList.add('body-overflow');
   burgerMenu.classList.add('mobile-menu-animation');
+  overlay.classList.add('overlay-animation', 'overlay-visible');
+  overlay.addEventListener('animationend', function () {
+    overlay.classList.add('overlay-opacity');
+  });
   burgerMenu.addEventListener('animationend', function () {
     burgerMenu.classList.add('mobile-menu-animation-end');
   });

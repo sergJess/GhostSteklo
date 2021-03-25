@@ -35,10 +35,16 @@ if(media620Px.matches){
 
 
 //mobile
-const burgerMenu = document.querySelector('.header-nav');
+const overlay = document.querySelector('.overlay');
+const burgerMenu = document.querySelector('.mobile-menu');
 const burger = document.querySelector('.burger');
 burger.addEventListener('click',(e)=>{
+    document.body.classList.add('body-overflow');
     burgerMenu.classList.add('mobile-menu-animation');
+    overlay.classList.add('overlay-animation','overlay-visible');
+    overlay.addEventListener('animationend', ()=>{
+        overlay.classList.add('overlay-opacity');
+    });
     burgerMenu.addEventListener('animationend', ()=>{
         burgerMenu.classList.add('mobile-menu-animation-end');
     });
